@@ -18,7 +18,7 @@ public class QuartzJob extends QuartzJobBean {
 
 
     protected void executeInternal(JobExecutionContext jobExecutionContext) throws JobExecutionException {
-        System.out.println("当前时间为：" + new Date() + " - 任务执行中");
+        System.out.println(QuartzJob.class.getName() + " - 当前时间为：" + new Date() + " - 任务执行中");
     }
 
     public int getTimeout() {
